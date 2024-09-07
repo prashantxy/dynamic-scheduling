@@ -7,7 +7,7 @@ import numpy as np
 @st.cache
 def load_data(file_path):
     df = pd.read_csv(file_path)
-    if 'No__of_Buses' not in df.columns:
+    if 'No. of Buses' not in df.columns:
         st.error("Error: Column 'No. of Buses' does not exist in the CSV file.")
         return None
     return df
